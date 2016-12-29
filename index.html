@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Islamic Quiz</title>
+    <link rel="stylesheet" href="./style.css">
+    
+</head>
+<body>
+    <!--<div id="firstDiv">-->
+        <center>
+        <div class="innerDiv" id="mainDiv">
+                
+                  <h1>Islamic <br> Quiz</h1> 
+                    <span id="playBtn">
+                    <button onclick="quistionBox()">Play</button>
+                    <button onclick="about()">About</button> 
+                    <!--<button>more games</button>-->
+                    </span>
+               
+                
+        </div>
+         </center>
+    <!--</div>-->
+      <center> 
+          <div  class="hideBox innerDiv" id="mainQDiv" >
+               <h1 id="qH1">Islamic Quiz</h1> <hr> 
+               <div id="QCount"> Question : <span id="QCountBox" class="counter"> 1</span>        </div>
+                <div id="scoreCount">Points : <span id="countBox" class="counter"> 0 </span> </div>
+                 <div id="qDiv">  
+                     <p id="quis"></p>
+                     
+                  <ol id="option">
+                            <li></li>
+                            <li></li>
+                            <li></li>
+                            <li></li>
+                    </ol>   
+                 </div> 
+                      <div id="modal_Box">
+                          <div id="ModalContent"></div>
+                              
+                              <h2 class="hukm" id="hkm"></h2>
+                              <p class="ans"></p>
+                          
+
+                          <button onclick="hb(),qIncr()" id="boxBtn"> Ok</button>
+                      </div>
+        </center>
+       <center>
+        <div class="hideBox innerDiv"  id="result" >
+           <h1 id="rank"></h1>
+        
+           <p id="totalS">Total Score</p>
+           <p id="score"></p>
+           <button id="pAgain" onclick="quistionBox()">Play Again</button>
+        </div>
+        </center>
+        <center>
+            <div class="hideBox innerDiv"  id="about">
+                <div id="p"><p id="aboutp">This Quiz is about Our Beloved Prophet Muhammad (Sallallahu Alyhi Wasallam)
+                   <br> There are 10 Questions in This Islamic Quiz. <br> Each Question has 10 Points <br>
+                It is made by Faisal Mehmood.......     <br>
+                Thank You..... <hr> Regards: "FAISAL MEHM0OD".
+                 </p>
+                 <button id="backBtn" onclick="back()">Back</button></div>
+        </center>
+
+    <script src="./quizApp.js"></script>
+</body>
+</html>
